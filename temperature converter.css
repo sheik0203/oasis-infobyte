@@ -1,0 +1,93 @@
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the container */
+.container {
+    background: #fff;
+    max-width: 400px;
+    margin: 60px auto 0 auto;
+    padding: 32px 28px 28px 28px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(60, 120, 200, 0.12);
+    border: 1px solid #e3e3e3;
+}
+
+/* Heading style */
+.container h2 {
+    text-align: center;
+    color: #2a5298;
+    margin-bottom: 28px;
+    letter-spacing: 1px;
+}
+
+/* Label styling */
+label {
+    font-weight: 500;
+    color: #2a5298;
+    margin-bottom: 6px;
+    margin-top: 10px;
+}
+
+/* Input and select styling */
+input[type="number"], select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #bfc9d1;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-bottom: 18px;
+    background: #f7fafc;
+    transition: border 0.2s;
+}
+
+input[type="number"]:focus, select:focus {
+    border-color: #2a5298;
+    outline: none;
+}
+
+/* Button styling */
+button#convertBtn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #2a5298 0%, #1e3c72 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.08rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    margin-top: 8px;
+}
+
+button#convertBtn:hover {
+    background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+    transform: translateY(-2px) scale(1.02);
+}
+
+/* Result styling */
+#result {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-top: 22px;
+    text-align: center;
+    min-height: 28px;
+    transition: color 0.2s;
+}
+
+/* Responsive design */
+@media (max-width: 500px) {
+    .container {
+        padding: 18px 8px 18px 8px;
+        border-radius: 10px;
+    }
+    .container h2 {
+        font-size: 1.2rem;
+    }
+}
